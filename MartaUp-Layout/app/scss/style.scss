@@ -1,0 +1,323 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header{
+    background-image: url(../images/header-bg.jpg);
+    min-height: 793px;
+    @extend %backgrorung-things;
+
+    .container{
+        max-width: 1170px;
+    }
+
+    &__top{
+        margin-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 141px;
+    }
+
+    .menu{
+        &__list{
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu__list-item{
+            padding-left: 50px;
+        }
+
+        .menu__link{
+            @extend %default-font;
+            @extend %average-font-things;
+            color: $white-color;
+            text-transform: uppercase;
+            
+            opacity: 0.5;
+        }
+
+        .menu__link:hover{
+            opacity: 1;
+            transition: all 1s;
+        }
+    }
+
+    .header__btn{
+        text-transform: uppercase;
+
+        &-login{
+            @extend %default-font;
+            @extend %average-font-things;
+            color: $white-color;
+            padding-right: 44px;
+        }
+
+        &-register{
+            @extend %default-font;
+            @extend %average-font-things;
+            color: $btns-color;
+
+            background: $white-color;
+            border-radius: 20px;
+            padding: 8px 44px;
+        }
+    }
+
+    .header__content{
+        min-width: 295px;
+        min-height: 506px;
+        left: 0;
+
+        &-title{
+            @extend %title-font;
+            color: $white-color;
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+
+        &-description{
+            @extend %description-font;
+            color: $white-color;
+            font-size: 24px;
+            line-height: 55px;
+            margin-bottom: 60px;
+        }
+
+        &-quote{
+            @extend %default-font;
+            @extend %average-font-things;
+            color: $btns-color;
+            text-transform: uppercase;
+
+            background: $yellow-color;
+            border-radius: 25px;
+            padding: 13px 39px;
+        }
+    }
+}
+
+.specializes{
+    min-height: 630px;
+    background-color: $white-color;
+
+    &__title{
+        @extend %title-font;
+        color: $black-color;
+        text-transform: uppercase;
+        font-size: 35px;
+        line-height: 45px;
+        margin-top: 116px;
+        margin-left: 400px;
+        margin-bottom: 97px;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+
+        &-item{
+            height: 280px;
+            width: 280px;
+            left: 0;
+        }
+    }
+
+    .specializes__item-title{
+        @extend %title-font;
+        color: $black-color;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding-top: 23px;
+        padding-left: 43px;
+        padding-bottom: 10px;
+    }
+
+    .specializes__item-description{
+        @extend %description-font;
+        @extend %average-font-things;
+        color: $sub-black-color;
+        opacity: 0.7;
+    }
+}
+
+.main{
+    background-image: url(../images/main-bg.svg);
+    @extend %backgrorung-things;
+    min-height: 1821px;
+}
+
+.expirience{
+    display: flex;
+    min-height: 571px;
+    margin-top: 63px;
+
+    &__wrapper{
+        height: 323px;
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    &__title{
+        @extend %title-font;
+        color: $black-color;
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    }
+
+    &__description{
+        @extend %description-font;
+        @extend %average-font-things;
+        color: $sub-black-color;
+    }
+}
+
+.information{
+    display: flex;
+    min-height: 516px;
+    margin-top: 50px;
+
+    &__wrapper{
+        height: 353px;
+        align-items: center;
+        padding-top: 120px;
+        padding-left: 80px;
+    }
+
+    &__title{
+        @extend %title-font;
+        color: $black-color;
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    }
+
+    &__description{
+        @extend %description-font;
+        @extend %average-font-things;
+        color: $sub-black-color;
+    }
+}
+
+.idea{
+    display: flex;
+    min-height: 541px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &__wrapper{
+        height: 271px;
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    &__title{
+        @extend %title-font;
+        color: $black-color;
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    }
+
+    &__description{
+        @extend %description-font;
+        @extend %average-font-things;
+        color: $sub-black-color;
+    }
+}
+
+.quotes{
+    background-image: url(../images/footer-bg.svg);
+    @extend %backgrorung-things;
+    min-height: 519px;
+
+    &__content-title{
+        @extend %title-font;
+        color: $white-color;
+        font-size: 35px;
+        line-height: 45px;  
+        padding-top: 48px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sub-container{
+        width: 300px;
+        height: 271px;
+        border: 1px solid $deep-blue;
+        border-radius: 12px;
+        background-color: $deep-blue;
+    }
+
+    &__img{
+        padding-left: 10px;
+    }
+
+    &__item-top{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    &__title{
+        @extend %default-font;
+        @extend %average-font-things;
+        color: $white-color;
+        padding-left: 20px;
+        opacity: 0.5;
+    }
+
+    &__sub-title{
+        color: $white-color;
+        text-align: center;
+    }
+
+    &__description{
+        @extend %default-font;
+        @extend %average-font-things;
+        color: $white-color;
+        text-align: center;
+    }
+}
+
+.footer{
+    &__wrapper{
+        min-height: 61px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 18px;
+    }
+
+    &__list{
+        display: flex;
+    }
+
+    &__item + &__item{
+        padding-left: 45px;
+    }
+
+    &__link{
+        @extend %description-font;
+        @extend %average-font-things;
+        color: $sub-black-color;
+    }
+
+    &__description{
+        @extend %description-font;
+        @extend %average-font-things;
+        color: $sub-black-color;
+    }
+}
+
